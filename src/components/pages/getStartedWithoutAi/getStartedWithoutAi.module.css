@@ -1,0 +1,20 @@
+/* job post without ai styles */
+.skillsBtn {
+  @apply rounded-[100px] gap-[10px] bg-[#005aff08] border border-transparent flex items-center text-[16px] md:text-[18px] leading-[20px] md:leading-[25px] font-normal py-[6px] md:py-2 px-3 md:px-4;
+}
+.skillsBtnActive {
+  @apply rounded-[100px] gap-[10px] bg-[#005aff08] border border-[#005AFF] flex items-center text-[16px] md:text-[18px] leading-[20px] md:leading-[25px] font-normal py-[6px] md:py-2 px-3 md:px-4;
+}
+
+.text-22 {
+  font-size: 22px;
+}
+.text-40 {
+  font-size: 40px;
+}
+.text-18 {
+  font-size: 18px;
+}
+.left-job-content {
+  @apply w-full lg:w-[412px] my-14;
+}

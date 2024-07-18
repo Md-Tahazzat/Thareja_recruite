@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scrollbar style starts */
+/* Chrome, Safari */
+/* ::-webkit-scrollbar {
+  width: 15px; 
+  height: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: wheat; 
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 15px; 
+  background-color: white; 
+} */
+/* scrollbar style ends */
+
+/* GLOBAL CLASSNAMES STARTS */
+.primary-btn {
+  @apply bg-[#005AFF] text-white  hover:bg-[#005AFF] cursor-pointer;
+}
+.btn {
+  @apply text-[16px] md:text-[18px] lg:text-[20px] leading-[20px] md:leading-[23px] lg:leading-[25px] py-[10px] md:py-[16] px-[30px] md:px-[40px] rounded-[100px] border-none outline-none;
+}
+.disable-btn {
+  @apply bg-[#dde3e766] cursor-not-allowed text-[#525966cc] pointer-events-none;
+}
+/* GLOBAL CLASSNAMES ENDS */
+.test {
+  background: #005aff08;
+}
+
+/* onboarding page style starts */
+.gradient-border {
+  background: linear-gradient(to right, #01d18f, #005aff);
+}
+/* onboarding page style ends */
+
+/* Login form style starts  */
+.login-form-label {
+  @apply block text-[15px] mb-[10px] md:text-[16px] xl:text-[20px] leading-normal tracking-[0.4px];
+}
+.login-form-input {
+  @apply outline-none focus:outline-none rounded-[6px] font-normal bg-transparent text-[15px] md:text-[16px] xl:text-[18px] leading-normal tracking-[0.36px]  py-[11.5px] px-[14px] w-full;
+}
+
+.country-option {
+  @apply mb-0.5 md:text-lg w-full block px-[14px] duration-300 hover:text-white hover:bg-[#005aff];
+}
+/* Login form style ends  */
+
+/* Main header style starts */
+.dropdown-label {
+  @apply flex items-center gap-[10px] text-[18px] font-normal leading-normal tracking-[0.36px] cursor-pointer;
+}
+
+.drop-down-links {
+  @apply relative;
+}
+.drop-down-content {
+  @apply absolute left-0 top-[100%] min-w-[200px] bg-white z-50 py-5 border-t w-full max-w-[200px];
+}
+.drop-down-content li {
+  @apply duration-300 py-1 px-5 hover:bg-[#005aff] w-full hover:text-white cursor-pointer;
+}
+/* Main header style ends */
+
+/* hamberger menu starts */
+.phone-nav {
+  @apply w-[25px] flex flex-col gap-1.5;
+}
+
+.phone-nav div {
+  @apply w-full h-0.5 bg-black rounded-[100px] duration-300;
+}
+
+.phone-nav.active .first {
+  transform: translate(10px, 4.1px) rotate(-45deg);
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+  width: 50%;
+}
+
+.phone-nav.active .second {
+  transform: translate(0px, 0px) rotate(45deg);
+}
+
+.phone-nav.active .third {
+  transform: translate(1.7px, -3.7px) rotate(-45deg);
+  border-end-end-radius: 0;
+  border-start-end-radius: 0;
+  width: 50%;
+}
+/* hamberger menu ends */
+
+/* Job post style starts */
+.jobpost-details-label {
+  @apply text-[20px] md:text-[22px] leading-[35px] md:leading-10 font-normal;
+}
+
+.jobpost-details-des {
+  @apply text-[18px] font-light leading-[25px];
+}
+
+.job-scope-dropdown {
+  @apply border border-[#0000001a] py-[10px] px-4 rounded-[6px];
+}
+/* Job post style ends */
+
+/* test code  */
+.shadow-select-dropdown {
+  background: #00000024;
+}
+.select-option {
+  @apply duration-150 py-[6px] my-[1px] cursor-pointer text-base md:text-[18px] leading-[25px] w-full hover:bg-[#005aff] px-[20px] hover:text-white;
+}
+
+.skillsBtn {
+  @apply rounded-[100px] gap-[10px] bg-[#005aff08] border border-transparent flex items-center text-[16px] md:text-[18px] leading-[20px] md:leading-[25px] font-normal py-[6px] md:py-2 px-3 md:px-4;
+}
+.skillsBtnActive {
+  @apply rounded-[100px] gap-[10px] bg-[#005aff08] border border-[#005AFF] flex items-center text-[16px] md:text-[18px] leading-[20px] md:leading-[25px] font-normal py-[6px] md:py-2 px-3 md:px-4;
+}
+
+/* 
+
+ <div className=" w-full max-w-[776px] max-h-[95%] min-h-[250px] py-[20px] h-full rounded-[20px] md:rounded-[30px] bg-white shadow-md ">
+      <div className="overflow-y-auto relative px-[20px] md:px-[50px] md:pl-[32px] md:py-[30px] max-h-[100%] w-full h-full">*/
+
+/* =======Job Review location card gradient style ======= */
+.location-gradient-card {
+  @apply bg-white !box-border rounded-[16.4px] px-5 md:px-[25px] py-3  xl:px-[34px] md:py-[15px] xl:py-[24px];
+  width: 100%;
+  width: calc(100% - 2px);
+  height: 100%;
+  height: calc(100% - 2px);
+}
+
+.job-review-gradient-container {
+  @apply flex items-center m-[1px] justify-center cursor-pointer rounded-[16.4px] h-auto;
+}
